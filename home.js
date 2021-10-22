@@ -22,10 +22,8 @@
 */
 
 //CODE HERE
-var greetUser = (username) => {
-    return `Welcome back, ${username}`
-}
-console.log(greetUser('Andrew'))
+// var greetUser = (username) => {return `Welcome back, ${username}`}
+// console.log(greetUser('Andrew'))
 
 
 
@@ -52,9 +50,14 @@ console.log(greetUser('Andrew'))
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
+let canWeDeliver = (zipCode) => {
+        if (deliveryAreaZipCodes.includes(zipCode)) {        
+    console.log('You\'re in our delivery zone!')
+        } else {console.log('Sorry, we can\'t deliver to that address')}
+    }
+//}
 
-
-
+canWeDeliver(84606)
 /* 
     Problem 2 Continued
 
