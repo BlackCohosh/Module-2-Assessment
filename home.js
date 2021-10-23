@@ -50,14 +50,14 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-let canWeDeliver = (zipCode) => {
-        if (deliveryAreaZipCodes.includes(zipCode)) {        
-    console.log('You\'re in our delivery zone!')
-        } else {console.log('Sorry, we can\'t deliver to that address')}
-    }
-//}
+// let canWeDeliver = (zipCode) => {
+//         if (deliveryAreaZipCodes.includes(zipCode)) {        
+//     console.log('You\'re in our delivery zone!')
+//         } else {console.log('Sorry, we can\'t deliver to that address')}
+//     }
+// //}
 
-canWeDeliver(84606)
+// canWeDeliver(84606)
 /* 
     Problem 2 Continued
 
@@ -112,7 +112,8 @@ const deals = [
 */
 
 //CODE HERE
-
+let dealFifteenToTen = deals[0].title.replace('15', '10')
+console.log(dealFifteenToTen)
 
 
 /*
@@ -129,3 +130,5 @@ const deals = [
 */
 
 //CODE HERE
+let dealMarchToApril = (deals[1].desc.replace('March', 'April')).trim()
+console.log(dealMarchToApril)
