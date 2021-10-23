@@ -60,7 +60,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -70,7 +70,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+let {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -80,7 +81,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-
+let {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
