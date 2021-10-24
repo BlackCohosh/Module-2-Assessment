@@ -116,28 +116,28 @@ let foodArr = [
         "name": 'Meatbawls',
         "price": 10,
         "category": 'appetizer',
-        "popularity": 3,
+        "popularity": 4,
         "tags": ['keto', 'sharable']
     },
     {
         "name": 'Malibu Barbie',
         "price": 18,
         "category": 'entree',
-        "popularity": 4,
+        "popularity": 5,
         "tags": ['hawaiian', 'gluten free']
     },
     {
         "name": 'I Love it When You Call Me Big Poppa-roni',
         "price": 16,
         "category": 'entree',
-        "popularity": 5,
+        "popularity": 6,
         "tags": ['pepperoni', 'gluten free']
     },
     {
         "name": 'Salad',
         "price": 6,
         "category": "appetizer",
-        "popularity": 6,
+        "popularity": 7,
         "tags": ['vegitarian', 'gluten free']
     }
 ]
@@ -155,9 +155,19 @@ let foodArr = [
 */
 
 //CODE HERE
+// const tagCallback = (x) => {
+//     if (foodArr.tag.includes(x)) {
+//         return foodArr.name
+//     }
+// }
+const tagNameSearchable = (tagName) => {
+    return JSON.stringify(tagName)
+}
+//const tagCallback = foodArr.some() function(tagName){
+//    return tagName ({"tags":'vegitarian'}
+const filteredFood = foodArr.filter(element => element{tags: 'vegitarian'})
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
