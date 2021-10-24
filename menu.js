@@ -49,7 +49,7 @@ const pizza = {
 */
 
 //CODE HERE
-console.log(pizza.popularity)
+//console.log(pizza.popularity)
 
 
 /*
@@ -60,7 +60,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-console.log(pizza.tags[1])
+//console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -71,7 +71,7 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 let {price} = pizza
-console.log(price)
+//console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -82,7 +82,7 @@ console.log(price)
 
 //CODE HERE
 let {category} = pizza
-console.log(category)
+// console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -97,8 +97,50 @@ console.log(category)
 */
 
 //CODE HERE
-
-
+let foodArr = [
+    {
+        "name": 'Very Veggie',
+        "price": 20,
+        "category": 'entree',
+        "popularity": 2,
+        "tags": ['vegitatian', 'gluten free', 'veggies', 'healthy']
+    },
+    {
+        "name": 'Tower of Chizza',
+        "price": 15,
+        "category": 'entree',
+        "popularity": 3,
+        "tags": ['vegitarian', 'gluten free', 'cheese'] 
+    },
+    {
+        "name": 'Meatbawls',
+        "price": 10,
+        "category": 'appetizer',
+        "popularity": 3,
+        "tags": ['keto', 'sharable']
+    },
+    {
+        "name": 'Malibu Barbie',
+        "price": 18,
+        "category": 'entree',
+        "popularity": 4,
+        "tags": ['hawaiian', 'gluten free']
+    },
+    {
+        "name": 'I Love it When You Call Me Big Poppa-roni',
+        "price": 16,
+        "category": 'entree',
+        "popularity": 5,
+        "tags": ['pepperoni', 'gluten free']
+    },
+    {
+        "name": 'Salad',
+        "price": 6,
+        "category": "appetizer",
+        "popularity": 6,
+        "tags": ['vegitarian', 'gluten free']
+    }
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
