@@ -33,7 +33,7 @@
 //CODE HERE
 const pizza = {
     name: 'Mizza Pizza',
-    price: 19,
+    price: 21,
     category: 'entree',
     popularity: 1,
     tags: ['gluten free', 'meats', 'hearty'] 
