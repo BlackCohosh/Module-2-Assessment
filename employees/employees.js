@@ -23,7 +23,7 @@
 class Employee {
     constructor(name, shifts){
         this.name = name;
-        this.shifts = shifts.toString();
+        this.shifts = shifts;
     }
     getschedule(){
         console.log(this.name, ` works on `, this.shifts, '.')
@@ -92,20 +92,20 @@ empTwo = {...empOne, name: 'Nick'}
 
 //CODE HERE
 class Manager extends Employee {
-    constructor(name, shifts,employees){
+    constructor(employees){
 //        this.name = name;
 //        this.shifts = shifts
-        super(name, shifts)
-        this.employees = employees.toString();
+        super()
+        this.employees = employees;
     }
 
     getEmployees(){
         console.log(this.name, ' manages ', this.employees)
     }
-    addEmployee(){
+    addEmployee(emp){
 //        let newEmployee :Manager[]= []
 //        Array.from(this.employees)
-        this.employees.push();
+        this.employees.push(emp);
 //        Obj.arrayOne.push(arraynew)
     }
 }
