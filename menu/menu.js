@@ -31,7 +31,13 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: 'Mizza Pizza',
+    price: 21,
+    category: 'entree',
+    popularity: 1,
+    tags: ['gluten free', 'meats', 'hearty'] 
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,6 +49,7 @@
 */
 
 //CODE HERE
+//console.log(pizza.popularity)
 
 
 /*
@@ -53,7 +60,7 @@
 */
 
 //CODE HERE
-
+//console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,7 +70,8 @@
 */
 
 //CODE HERE
-
+let {price} = pizza
+//console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +81,8 @@
 */
 
 //CODE HERE
-
+let {category} = pizza
+// console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,8 +97,50 @@
 */
 
 //CODE HERE
-
-
+let foodArr = [
+    {
+        "name": 'Very Veggie',
+        "price": 20,
+        "category": 'entree',
+        "popularity": 2,
+        "tags": ['vegitatian', 'gluten free', 'veggies', 'healthy']
+    },
+    {
+        "name": 'Tower of Chizza',
+        "price": 15,
+        "category": 'entree',
+        "popularity": 3,
+        "tags": ['vegitarian', 'gluten free', 'cheese'] 
+    },
+    {
+        "name": 'Meatbawls',
+        "price": 10,
+        "category": 'appetizer',
+        "popularity": 4,
+        "tags": ['keto', 'sharable']
+    },
+    {
+        "name": 'Malibu Barbie',
+        "price": 18,
+        "category": 'entree',
+        "popularity": 5,
+        "tags": ['hawaiian', 'gluten free']
+    },
+    {
+        "name": 'I Love it When You Call Me Big Poppa-roni',
+        "price": 16,
+        "category": 'entree',
+        "popularity": 6,
+        "tags": ['pepperoni', 'gluten free']
+    },
+    {
+        "name": 'Salad',
+        "price": 6,
+        "category": "appetizer",
+        "popularity": 7,
+        "tags": ['vegitarian', 'gluten free']
+    }
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -104,9 +155,19 @@
 */
 
 //CODE HERE
+// const tagCallback = (x) => {
+//     if (foodArr.tag.includes(x)) {
+//         return foodArr.name
+//     }
+// }
+const tagNameSearchable = (tagName) => {
+    return JSON.stringify(tagName)
+}
+//const tagCallback = foodArr.some() function(tagName){
+//    return tagName ({"tags":'vegitarian'}
+const filteredFood = foodArr.filter(element => element{tags: 'vegitarian'})
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
