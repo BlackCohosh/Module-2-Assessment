@@ -26,7 +26,7 @@ class Employee {
         this.shifts = shifts;
     }
     getschedule(){
-        console.log(this.name, ` works on `, this.shifts, '.')
+        console.log(this.name, ` works on `, String(this.shifts), '.')
     }
 }
 
@@ -92,15 +92,15 @@ empTwo = {...empOne, name: 'Nick'}
 
 //CODE HERE
 class Manager extends Employee {
-    constructor(employees){
-//        this.name = name;
-//        this.shifts = shifts
+    constructor(name, shifts, employees){
         super()
-        this.employees = employees;
+        this.name = name;
+        this.shifts = shifts
+        this.employees = [employees];
     }
 
     getEmployees(){
-        console.log(this.name, ' manages ', this.employees)
+        console.log(`${this.name} manages ${this.employees}.`)
     }
     addEmployee(emp){
 //        let newEmployee :Manager[]= []
@@ -125,7 +125,7 @@ class Manager extends Employee {
 //CODE HERE
 
 let manager = new Manager('Winston', ['weekday mornings', ' weekday afternoons',], ['Cece', ' Schmidt'])
-//console.log(manager)
+console.log(manager)
 /*
     Call the `getEmployees` method on the
     `manager` object.  
@@ -140,7 +140,7 @@ manager.getEmployees()
 */
 
 //CODE HERE 
-manager.addEmployee('Coach')
+manager.addEmployee(' Coach')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -148,4 +148,4 @@ manager.addEmployee('Coach')
 */
 
 //CODE HERE
-getEmployees(manager)
+manager.getEmployees()
