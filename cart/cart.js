@@ -35,8 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+ const summedPrice = cart.reduce((sum , cur ) => sum + cur.price , 0)
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,7 +55,10 @@ const cart = [
 
 //CODE HERE
 
-
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    cartTotal = ((cartTotal * tax) + cartTotal) - couponValue
+    return Math.round(cartTotal)
+}
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -78,7 +81,7 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+ The properties of a customer object will be name, address, phone, and whether they are a rewards member. The name property is a string holding the customer's name so they can be identified. The address property is a string holding the customer's address so they can receive deliveries and promotional materials. The phone property is a string which holds the customer's phone number so they can be identified more easily in case of duplitate names. The rewardsMember property is a boolean property which could be used to apply promotional rewards to a customer's purchases.
 
 */
 
@@ -88,3 +91,9 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    name: "Scruff McGrugg",
+    address: "123 N Easy Street",
+    phone: 3376436860,
+    rewardMember: true
+}
