@@ -130,8 +130,8 @@ console.log(dealFifteenToTen)
 */
 
 //CODE HERE
-<<<<<<< HEAD:home.js
+
 let dealMarchToApril = (deals[1].desc.replace('March', 'April')).trim()
+
 console.log(dealMarchToApril)
-=======
->>>>>>> 07bbd14b0802cf7db227e2317bc3f1d1a968635b:home/home.js
+
