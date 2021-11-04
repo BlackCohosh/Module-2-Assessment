@@ -155,19 +155,11 @@ let foodArr = [
 */
 
 //CODE HERE
-// const tagCallback = (x) => {
-//     if (foodArr.tag.includes(x)) {
-//         return foodArr.name
-//     }
-// }
-const tagNameSearchable = (tagName) => {
-    return JSON.stringify(tagName)
-}
-//const tagCallback = foodArr.some() function(tagName){
-//    return tagName ({"tags":'vegitarian'}
-const filteredFood = foodArr.filter(element => element{tags: 'vegitarian'})
 
-console.log(filteredFood)
+// const filteredFood = foodArr.filter(food => food.tags.includes("keto"))
+
+
+// console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -210,7 +202,16 @@ console.log(filteredFood)
 */
 
 //CODE HERE
-
+const filterByProperty = (property, number, type) => {
+    let result = foodArr.filter(food => {
+        if (type === 'above') {
+            return food[property] > number
+        } else  if (type === 'below') {
+            return food[property] < number
+        }
+    })
+    return result
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -220,3 +221,4 @@ console.log(filteredFood)
 */
 
 //CODE HERE
+console.log(filterByProperty('popularity', 5, 'below'))
